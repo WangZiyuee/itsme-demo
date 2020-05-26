@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.topits.base.mapper.ImDemoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="me.topits.base.entity.ImDemo">
+        <id column="id" property="id" />
+        <result column="is_delete" property="isDelete" />
+        <result column="add_time" property="addTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="name" property="name" />
+        <result column="user_mobile_mask" property="userMobileMask" />
+        <result column="user_mobile_md5" property="userMobileMd5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, is_delete, add_time, update_time, name, user_mobile_mask, user_mobile_md5
+    </sql>
+
+</mapper>
