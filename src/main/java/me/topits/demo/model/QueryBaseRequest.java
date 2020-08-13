@@ -29,9 +29,9 @@ public class QueryBaseRequest {
         return 0;
     }
 
-    private Integer getSize() throws Exception {
+    private Integer getSize() {
         if (this.size > MAX_SIZE) {
-            throw new Exception("分页数超过上限");
+           return MAX_SIZE;
         }
         return this.size;
     }
